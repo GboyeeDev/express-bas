@@ -20,7 +20,7 @@ app.use((req, res, next) =>{
     console.log(`${req.method} ${req.baseUrl} ${req.url} ${delta}ms`)
 })
 
-// this site middleware is to lauch our static page from any root directory
+// this site middleware is to launch our static page from any root directory
 app.use('/sites', express.static(path.join(__dirname, 'public')))
 app.use(express.json())
 
