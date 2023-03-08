@@ -9,7 +9,9 @@ friendsRouter.use((req, res, next) =>{
     next();
 })
 
-
+friendsRouter.get('/', friendsController.getFriends)
+friendsRouter.post('/', friendsController.postFriend)
+friendsRouter.get('/:friendId', friendsController.getFriend)
 
 
 module.exports = friendsRouter
