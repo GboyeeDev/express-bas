@@ -1,5 +1,4 @@
-const path = require('path')
-// windows: \folder\files.jpg mac or linux: /folder/files.jpg
+
 
 
 function getMessages (req, res) {
